@@ -29,7 +29,7 @@ export default function TicketDetails() {
 
         } catch (err) {
             console.error(err);
-            atoast.error("Unable to load ticket.");
+            toast.error("Unable to load ticket.");
         }
     }
 
@@ -42,7 +42,7 @@ export default function TicketDetails() {
                 notes
             });
 
-            atoast.success("Ticket updated successfully!");
+            toast.success("Ticket updated successfully!");
 
             navigate("/");
 
